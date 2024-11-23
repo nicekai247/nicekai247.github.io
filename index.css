@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -8,13 +15,15 @@ main {
 .container {
   border-radius: 10px;
   width: 80%;
-  background-color: rgb(103, 155, 155);
+  background-image: linear-gradient(to right, #9ff3b8, #f3e887);
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-div.content {
+#content,
+#content2 {
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -45,4 +54,9 @@ button {
   border: 0px solid white;
   border-radius: 10px;
   background-color: rgb(243, 170, 74);
+  font-size: larger;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #a3ffd6, #ffc470);
 }

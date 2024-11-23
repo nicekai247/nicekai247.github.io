@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let button2 = document.getElementById("check2");
 
   button.addEventListener("click", () => {
-    let paragr = document.getElementById("result");
+    const content = document.querySelector("#content");
+    let p = document.querySelector("#result");
     let origin = Number(document.getElementById("1").value);
     let percentPerYear = Number(document.getElementById("2").value);
     let numberOfTakeProfitPerYear = Number(document.getElementById("3").value);
@@ -50,17 +51,32 @@ document.addEventListener("DOMContentLoaded", () => {
       goal
     );
 
-    paragr.innerHTML = result;
+    if (p) {
+      content.removeChild(p);
+    }
+
+    let output = document.createElement("p");
+    output.setAttribute("id", "result");
+    output.innerHTML = result;
+    content.appendChild(output);
   });
 
   button2.addEventListener("click", () => {
-    let paragr2 = document.getElementById("result2");
+    const content = document.querySelector("#content2");
+    let p = document.querySelector("#result2");
     let origin = Number(document.getElementById("5").value);
     let percentPerYear = Number(document.getElementById("6").value);
     let term = document.getElementById("7").value;
     let goal = Number(document.getElementById("8").value);
-    let result = noCompound(origin, percentPerYear, term, goal);
+    let result = noCompound(origin, percentPerYear, term, goal) || 0;
 
-    paragr2.innerHTML = result;
+    if (p) {
+      content.removeChild(p);
+    }
+
+    let output2 = document.createElement("p");
+    output2.setAttribute("id", "result2");
+    output2.innerHTML = result;
+    content.appendChild(output2);
   });
 });
