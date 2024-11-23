@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+
+div.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 10px;
+
+  height: 600px;
+  background-color: rgb(103, 155, 155);
+}
+
+input {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#result {
+  border-radius: 10px;
+  background-color: bisque;
+  min-width: 210px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
