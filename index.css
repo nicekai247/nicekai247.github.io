@@ -58,5 +58,6 @@ button {
 }
 
 button:hover {
-  background-image: linear-gradient(to right, #a3ffd6, #ffc470);
+  background-image: linear-gradient(to right, #ffc470, #a3ffd6);
+  cursor: pointer;
 }
