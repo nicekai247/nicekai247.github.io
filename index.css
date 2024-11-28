@@ -16,7 +16,7 @@ main {
   border-radius: 10px;
   width: 80%;
   background-image: linear-gradient(to right, #9ff3b8, #f3e887);
-
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
